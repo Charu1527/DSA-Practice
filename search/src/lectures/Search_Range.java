@@ -1,4 +1,4 @@
-//search for a no in the given range
+package lectures;//search for a no in the given range
 import java.util.Scanner;
 
 public class Search_Range {

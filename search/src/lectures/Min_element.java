@@ -1,6 +1,4 @@
-//find min element in the array
-import java.util.Arrays;
-import java.util.Scanner;
+package lectures;//find min element in the array
 
 public class Min_element {
     public static void main(String[] args) {
