@@ -1,3 +1,5 @@
+package lectures;
+
 public class MaxWealth {
     public static void main(String[] args) {
         int[][] acc={{1, 2, 3},{3, 9, 1}};

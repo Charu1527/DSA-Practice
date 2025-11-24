@@ -1,3 +1,5 @@
+package lectures;
+
 //find no of nos that have even no of digits
 // https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 public class EvenDigits {

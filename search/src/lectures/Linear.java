@@ -1,3 +1,5 @@
+package lectures;
+
 public class Linear {
     public static void main(String[] args) {
         int[] nums = {34,7,9,78,45,89,23,3};
