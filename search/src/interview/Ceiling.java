@@ -2,12 +2,15 @@ package interview;
 // Return the index of smallest no >=target
 public class Ceiling {
     public static void main(String[] args){
-        int arr[]={2,5,8,9,17,89,899};
-        int target=15;
+        int arr[]={2,5,8,9,17,89,97};
+        int target=95;
         System.out.println(ceiling(arr,target));
     }
 
     static int ceiling(int[] arr,int target) {
+        if(target>arr[arr.length-1]){
+            return -1;
+        }
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
