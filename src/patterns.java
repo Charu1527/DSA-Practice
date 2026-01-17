@@ -5,7 +5,7 @@ public class patterns {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of rows : ");
         int n = input.nextInt();
-        pattern1(n);
+        pattern2(n);
     }
 
 
@@ -21,6 +21,15 @@ public class patterns {
         for(int row=n/2;row<=n;row++){
             for(int col=1;col<=n-row+1;col++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern2(int n) {
+        for(int row=1;row<=n;row++){
+            for(int col=1;col<=row;col++){
+                System.out.print(col+" ");
             }
             System.out.println();
         }
