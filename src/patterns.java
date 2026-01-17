@@ -9,8 +9,16 @@ public class patterns {
     }
 
     static void pattern1(int n) {
-        for(int row=1;row<=n;row++){
+//        1st half of the code
+        for(int row=1;row<=n/2;row++){
             for(int col=1;col<=row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+//        2nd half of the code
+        for(int row=n/2;row<=n;row++){
+            for(int col=1;col<=n-row+1;col++){
                 System.out.print("* ");
             }
             System.out.println();
