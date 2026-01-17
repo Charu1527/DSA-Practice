@@ -8,6 +8,7 @@ public class patterns {
         pattern1(n);
     }
 
+
     static void pattern1(int n) {
 //        1st half of the code
         for(int row=1;row<=n/2;row++){
