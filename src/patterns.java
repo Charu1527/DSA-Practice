@@ -5,7 +5,7 @@ public class patterns {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of rows : ");
         int n = input.nextInt();
-        pattern1(n);
+        pattern3(n);
     }
 
 
@@ -35,4 +35,27 @@ public class patterns {
             System.out.println();
         }
     }
+
+
+    static void pattern3(int n) {
+        for (int row = 0; row < 2 * n ; row++) {
+            int totalColsInRow;
+            if (row <= n) {
+                totalColsInRow = row;          // 1st half
+            } else {
+                totalColsInRow = 2 * n - row;  // 2nd half
+            }
+
+            int noofspace= n-totalColsInRow;
+            for(int s=0;s<noofspace;s++){
+                System.out.print(" ");
+            }
+
+            for (int col = 0; col < totalColsInRow; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
 }
