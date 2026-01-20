@@ -27,6 +27,7 @@ public class patterns {
     }
 
 
+
     static void pattern2(int n) {
         for(int row=1;row<=n;row++){
             for(int col=1;col<=row;col++){
@@ -37,8 +38,11 @@ public class patterns {
     }
 
 
+
+
     static void pattern3(int n) {
-        for (int row = 0; row < 2 * n ; row++) {
+        for (int row = 1; row <= 2 * n - 1; row++) {
+
             int totalColsInRow;
             if (row <= n) {
                 totalColsInRow = row;          // 1st half
@@ -57,5 +61,4 @@ public class patterns {
             System.out.println();
         }
     }
-
 }
